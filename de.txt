@@ -1,0 +1,65 @@
+# Buổi 3
+
+### **Bài tập về Struct**
+
+1. **Quản lý thông tin nhân viên**:
+    - Viết một struct `Employee` có các trường `name`, `age`, và `position`. Viết một hàm nhận vào một danh sách nhân viên và trả về thông tin của nhân viên có tuổi cao nhất.
+    - Ví dụ: `{"John", 30, "Manager"}, {"Alice", 25, "Engineer"}` => `John`
+2. **Tính chu vi và diện tích**:
+    - Tạo struct `Circle` có trường `radius`. Viết các phương thức để tính chu vi và diện tích của hình tròn.
+    - Ví dụ: `radius = 5` => Chu vi = `31.4`, Diện tích = `78.5`
+
+---
+
+### **Bài tập về Interface**
+
+1. **Hình học**:
+    - Tạo một interface `Shape` có phương thức `Area()` và `Perimeter()`. Triển khai interface này cho hai struct `Circle` và `Rectangle`.
+    - Ví dụ: `Circle{radius: 5}` và `Rectangle{width: 4, height: 6}` => Tính diện tích và chu vi.
+2. **Phương tiện giao thông**:
+    - Tạo một interface `Vehicle` với các phương thức `Start()` và `Stop()`. Tạo struct `Car` và `Bike`, triển khai interface `Vehicle` cho cả hai. Gọi các phương thức này cho từng loại phương tiện.
+    - Ví dụ: `Car{"Tesla Model 3"}` và `Bike{"Yamaha"}` => `Start()` và `Stop()`
+
+---
+
+### **Bài tập về Con trỏ**
+
+1. **Hoán đổi hai số**:
+    - Viết một hàm nhận vào con trỏ của hai số nguyên và hoán đổi giá trị của chúng.
+    - Ví dụ: `a = 3, b = 5` => `a = 5, b = 3`
+2. **Tăng giá trị**:
+    - Viết một hàm nhận vào con trỏ của một số nguyên và tăng giá trị của nó lên 1.
+    - Ví dụ: `x = 10` => `x = 11`
+
+---
+
+### **Bài tập về Đệ quy**
+
+1. **Tính giai thừa**:
+    - Viết một hàm đệ quy để tính giai thừa của một số nguyên `n`.
+    - Ví dụ: `n = 5` => `5! = 120`
+2. **Dãy Fibonacci**:
+    - Viết một hàm đệ quy để in ra `n` số đầu tiên trong dãy Fibonacci.
+    - Ví dụ: `n = 6` => `0, 1, 1, 2, 3, 5`
+
+---
+
+### **Bài tập về Defer, Panic và Recover**
+
+1. **Xử lý lỗi trong tính toán**:
+    - Viết một hàm chia hai số nguyên. Nếu mẫu số bằng 0, sử dụng `panic` để kích hoạt lỗi và `recover` để bắt lỗi đó.
+    - Ví dụ: `a = 10, b = 0` => `Lỗi: không thể chia cho 0`
+2. **Tính toán với defer**:
+    - Viết một hàm sử dụng `defer` để đảm bảo một lời chào "Goodbye!" luôn được in ra, bất kể lỗi có xảy ra hay không.
+    - Ví dụ: `Hello! -> Panic xảy ra -> Goodbye!`
+
+---
+
+### **Bài tập về Hàm Variadic**
+
+1. **Tính tổng các số**:
+    - Viết một hàm variadic nhận một danh sách các số nguyên và trả về tổng của chúng.
+    - Ví dụ: `1, 2, 3, 4` => `10`
+2. **Tìm giá trị lớn nhất**:
+    - Viết một hàm variadic nhận một danh sách các số nguyên và trả về giá trị lớn nhất trong danh sách.
+    - Ví dụ: `3, 5, 7, 2` => `7`
